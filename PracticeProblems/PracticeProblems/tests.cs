@@ -16,7 +16,8 @@ namespace PracticeProblems
             //conditions e.g., seconds, weeks, years, etc.
             if (timespan < 1)
             {
-                return timespan.ToString() + " hours(s) ago";
+                var timeinhours = Convert.ToInt32(current.Subtract(date).TotalHours);
+                return timeinhours.ToString() + " hours(s) ago";
             }
             else 
             {

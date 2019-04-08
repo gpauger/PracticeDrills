@@ -12,8 +12,9 @@ namespace PracticeProblems
         public static void Main(string[] args)
         {
             var formatter = new DateTimeToHumanReadableFormFormatter();
-           
-            Console.WriteLine(DateTimeToHumanReadableFormFormatter.Format(DateTime.Now.AddDays(-1), DateTime.Now));
+           Console.WriteLine(DateTimeToHumanReadableFormFormatter.Format(DateTime.Now.AddDays(-2), DateTime.Now));
+            Console.ReadLine();
+            Console.WriteLine(DateTimeToHumanReadableFormFormatter.Format(DateTime.Now.AddHours(-10), DateTime.Now));
             Console.ReadLine();
 
             //int[] test = new int[] {1, 3, 5, 2, 6, -1, 4, 4};
